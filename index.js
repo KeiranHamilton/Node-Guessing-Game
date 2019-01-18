@@ -13,7 +13,7 @@ function randomWord(wordList) {
   return wordList[index];
 }
 
-const questions = [
+var questions = [
   {
     name: "letterGuessed",
     message: "Guess a letter",
@@ -21,7 +21,7 @@ const questions = [
       var valid =
         value.length === 1 &&
         "abcdefghijklmnopqrstuvwxyz".indexOf(value.charAt(0).toLowerCase()) !==
-          -1; // fix letter logic later
+          -1; //
       return valid || "Please enter a letter";
     },
     when: function() {
